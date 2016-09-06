@@ -1,0 +1,2 @@
+# Blinky
+An arduino library for setting up LEDs connected to your Arduino as flashing lights like the ones known from police cars. This library doesn't use delay(), so the blinky function can be used within any loop() where other jobs have to be done.

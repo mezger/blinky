@@ -10,6 +10,8 @@ void setup() {
 
   //use noise on unconnected pin 0 to initialize random generator
   int randomSeed(analogRead(0));
+  
+  blinky.on();
 }
 
 void loop() {

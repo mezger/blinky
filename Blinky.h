@@ -6,9 +6,10 @@
 class Blinky 
 {
     public:
-        Blinky();
         void setupLed(byte pin);
         void blink();
+        void on();
+        void off();
     
     private:
         static const byte _maxLeds = 10; //max number of pins that can be configured for blinking LEDs
@@ -18,6 +19,7 @@ class Blinky
         unsigned long _previousMillis[_maxLeds]; //timestamp when state of LED was changed the last time
         boolean _firstBlink[_maxLeds]; //true if it is this the first on-phase, false if it is the second
         boolean _ledState[_maxLeds]; //is the LED LOW (off) or HIGH (on)
+        boolean _active = false; //is blinky switched on
 };
 
 #endif
